@@ -1,10 +1,10 @@
 import express from "express";
-import getLocationsWithTimezones from "./getLocationsWithTimezones";
+import getBMICategory from "./getBMICategory";
 
 const app = express();
 const port = 3000;
 
-app.get("/timezones", getLocationsWithTimezones);
+app.get("/bmi-category", getBMICategory);
 
 app.listen(port, () => {
   console.log(`Application is running on port ${port}.`);
